@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta name="author" content="JessIxAM" />
+     <title>customer satisfaction survey</title>
+
+
+     <link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon" />
+     <!-- stylesheet -->
+     <link rel="stylesheet" href="css/style.css" />
+     <!-- fonts -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+     <div class="bg-left"></div>
+     <div class="bg-right"></div>
+     <div class="introduction">
+          <h1 id="title">customer satisfaction survey</h1>
+          <p id="description"> Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
+     </div>
+     <form action="" id="survey-form">
+          <div class="form-item">
+               <label for="name" id="name-label">Name: </label>
+               <input type="text" id="name" name="name" required placeholder="Your Name">
+
+          </div>
+          <div class="form-item">
+               <label for="email" id="email-label">email: </label>
+               <input type="email" id="email" name="email" required placeholder="Your email">
+          </div>
+          <div class="form-item">
+               <label for="number" id="number-label">number of cats:</label>
+               <input type="number" id="number" name="numcats" min="1" max="10">
+          </div>
+          <div class="form-item">
+               <p>Lorem ipsum dolor sit amet.</p>
+               <div class="form-item-group">
+                    <label for="ra1">ip1: </label>
+                    <input name="ra" id="ra1" type="radio" value="ra1" checked>
+               </div>
+               <div class="form-item-group">
+                    <label for="ra2">ra2: </label>
+                    <input name="ra" id="ra2" type="radio" value="ra2">
+               </div>
+               <div class="form-item-group">
+                    <label for="ra2">ra2: </label>
+                    <input name="ra" id="ra3" type="radio" value="ra3">
+               </div>
+          </div>
+
+          <div class="form-item">
+               <select name="mark" id="dropdown">
+                    <option value selected disabled> Which mark do your cat eat</option>
+                    <optgroup label="old">
+                         Hallo
+                         <option value="ipsum">Ipsum</option>
+                         <option value="lorem">Lorem</option>
+                         <option value="tandem">Tandem</option>
+                    </optgroup>
+                    <optgroup label="new">
+                         <option value="tandem">Dolor</option>
+                         <option value="vlagae"> Vlagae </option>
+                         <option value="metasil"> Metasil</option>
+                    </optgroup>
+               </select>
+          </div>
+          <div class="form-item">
+               <label for="ch1">ch1:</label>
+               <input type="checkbox" name="ch" id="ch1" value="ch1">
+               <label for="ch2">ch2:</label>
+               <input type="checkbox" name="ch" id="ch2" value="ch2">
+               <label for="ch3">ch3:</label>
+               <input type="checkbox" name="ch" id="ch3" value="ch3">
+               <label for="ch3">ch4:</label>
+               <input type="checkbox" name="ch" id="ch4" value="ch4">
+          </div>
+          <div class="form-item">
+               <textarea name="comment" id="comment" cols="30" rows="10">Please leave a comment</textarea>
+
+          </div>
+          <div class="form-item">
+               <button type="submit" id="submit">Submit</button>
+
+          </div>
+     </form>
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
+
+
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Roboto Slab', serif;
