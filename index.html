@@ -20,80 +20,91 @@
 <body>
      <div class="bg-left"></div>
      <div class="bg-right"></div>
-     <div class="introduction">
-          <h1 id="title">customer satisfaction survey</h1>
-          <p id="description"> Lorem ipsum dolor, sit amet consectetur adipisicing. </p>
+     <div class="wrapper flex">
+          <div class="introduction flex">
+               <h1 id="title">customer <br /><span class="clear">satisfaction</span> survey</h1>
+               <p id="description"> We always want to improve—could you help us out for a few minutes and let us know about your shopping experience? </p>
+          </div>
+          <form class="flex" action="" id="survey-form">
+               <div class="form-item flex">
+                    <label for="name" id="name-label">Name: </label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+
+               </div>
+               <div class="form-item flex">
+                    <label for="email" id="email-label">email: </label>
+                    <input type="email" id="email" name="email" required placeholder="Your email">
+               </div>
+               <div class="form-item flex">
+                    <label for="number" id="number-label">number of cats:</label>
+                    <input type="number" id="number" name="numcats" min="1" max="10">
+               </div>
+               <div class="form-item flex">
+                    <p>Where did they sleep the most?</p>
+                    <div class="radio-div">
+                         <div class="form-item-group">
+                              <label for="bed">Bed </label>
+                              <input name="sleep" id="bed" type="radio" value="bed" checked>
+                         </div>
+                         <div class="form-item-group">
+                              <label for="sofa">Sofa </label>
+                              <input name="sleep" id="sofa" type="radio" value="sofa">
+                         </div>
+                         <div class="form-item-group">
+                              <label for="chair">Chair </label>
+                              <input name="sleep" id="chair" type="radio" value="chair">
+                         </div>
+                    </div>
+
+               </div>
+
+               <div class="form-item flex">
+                    <select name="mark" id="dropdown">
+                         <option value selected disabled> Which mark do your cat like to eat?</option>
+                         <optgroup label="Big cats">
+                              <option value="ipsum">Ipsum</option>
+                              <option value="lorem">Lorem</option>
+                              <option value="tandem">Tandem</option>
+                         </optgroup>
+                         <optgroup label="Small cats">
+                              <option value="tandem">Dolor</option>
+                              <option value="vlagae"> Vlagae </option>
+                              <option value="metasil"> Metasil</option>
+                         </optgroup>
+                    </select>
+               </div>
+               <div class="form-item flex checkbox-div-container">
+                    <p class="space"> Which of our products have you already purchase?</p>
+                    <div class="checkbox-div">
+                         <input type="checkbox" name="ch" id="ch1" value="ch1">
+                         <label for="ch1">Banana Balls</label>
+                    </div>
+                    <div class="checkbox-div">
+                         <input type="checkbox" name="ch" id="ch2" value="ch2">
+                         <label for="ch2">Cat Chewi-chewi</label>
+                    </div>
+                    <div class="checkbox-div">
+                         <input type="checkbox" name="ch" id="ch3" value="ch3">
+                         <label for="ch3">Rolling Thunder</label>
+                    </div>
+                    <div class="checkbox-div">
+                         <input type="checkbox" name="ch" id="ch4" value="ch4">
+                         <label for="ch3">Cat Princess Set</label>
+                    </div>
+               </div>
+               <div class="form-item flex">
+                    <p style="margin-top: 3rem; margin-bottom: 1rem;">Do you have any special needs?</p>
+                    <textarea name="comment" id="comment" placeholder="Please leave a comment"></textarea>
+
+               </div>
+               <div class="form-item">
+                    <button type="submit" id="submit">Submit</button>
+
+               </div>
+          </form>
      </div>
-     <form action="" id="survey-form">
-          <div class="form-item">
-               <label for="name" id="name-label">Name: </label>
-               <input type="text" id="name" name="name" required placeholder="Your Name">
 
-          </div>
-          <div class="form-item">
-               <label for="email" id="email-label">email: </label>
-               <input type="email" id="email" name="email" required placeholder="Your email">
-          </div>
-          <div class="form-item">
-               <label for="number" id="number-label">number of cats:</label>
-               <input type="number" id="number" name="numcats" min="1" max="10">
-          </div>
-          <div class="form-item">
-               <p>Lorem ipsum dolor sit amet.</p>
-               <div class="form-item-group">
-                    <label for="ra1">ip1: </label>
-                    <input name="ra" id="ra1" type="radio" value="ra1" checked>
-               </div>
-               <div class="form-item-group">
-                    <label for="ra2">ra2: </label>
-                    <input name="ra" id="ra2" type="radio" value="ra2">
-               </div>
-               <div class="form-item-group">
-                    <label for="ra2">ra2: </label>
-                    <input name="ra" id="ra3" type="radio" value="ra3">
-               </div>
-          </div>
-
-          <div class="form-item">
-               <select name="mark" id="dropdown">
-                    <option value selected disabled> Which mark do your cat eat</option>
-                    <optgroup label="old">
-                         Hallo
-                         <option value="ipsum">Ipsum</option>
-                         <option value="lorem">Lorem</option>
-                         <option value="tandem">Tandem</option>
-                    </optgroup>
-                    <optgroup label="new">
-                         <option value="tandem">Dolor</option>
-                         <option value="vlagae"> Vlagae </option>
-                         <option value="metasil"> Metasil</option>
-                    </optgroup>
-               </select>
-          </div>
-          <div class="form-item">
-               <label for="ch1">ch1:</label>
-               <input type="checkbox" name="ch" id="ch1" value="ch1">
-               <label for="ch2">ch2:</label>
-               <input type="checkbox" name="ch" id="ch2" value="ch2">
-               <label for="ch3">ch3:</label>
-               <input type="checkbox" name="ch" id="ch3" value="ch3">
-               <label for="ch3">ch4:</label>
-               <input type="checkbox" name="ch" id="ch4" value="ch4">
-          </div>
-          <div class="form-item">
-               <textarea name="comment" id="comment" cols="30" rows="10">Please leave a comment</textarea>
-
-          </div>
-          <div class="form-item">
-               <button type="submit" id="submit">Submit</button>
-
-          </div>
-     </form>
      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
-
-
-font-family: 'Hammersmith One', sans-serif;
-font-family: 'Roboto Slab', serif;
